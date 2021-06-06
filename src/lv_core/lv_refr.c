@@ -152,7 +152,7 @@ void _lv_inv_area(lv_disp_t * disp, const lv_area_t * area_p)
  * Get the display which is being refreshed
  * @return the display being refreshed
  */
-lv_disp_t * _lv_refr_get_disp_refreshing(void)
+IRAM_ATTR lv_disp_t * _lv_refr_get_disp_refreshing(void)
 {
     return disp_refr;
 }

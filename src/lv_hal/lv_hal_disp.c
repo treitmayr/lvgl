@@ -344,7 +344,7 @@ lv_disp_size_t lv_disp_get_size_category(lv_disp_t * disp)
  * Call in the display driver's `flush_cb` function when the flushing is finished
  * @param disp_drv pointer to display driver in `flush_cb` where this function is called
  */
-LV_ATTRIBUTE_FLUSH_READY void lv_disp_flush_ready(lv_disp_drv_t * disp_drv)
+LV_ATTRIBUTE_FLUSH_READY void IRAM_ATTR lv_disp_flush_ready(lv_disp_drv_t * disp_drv)
 {
     /*If the screen is transparent initialize it when the flushing is ready*/
 #if LV_COLOR_SCREEN_TRANSP
